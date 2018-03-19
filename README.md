@@ -18,11 +18,11 @@ Running markerScanner.py
 
      markerScanner.py peptide-sequence-file
      
-Options:
+     Options:
 
-     -E: HMMER3 E-value Cutoff. Default: 1e-7
-     -D: Domain of Input Proteome. Bacteria or Archaea. Default: Bacteria
-     -M: Directory containing marker files. Default: ./Marker 
+          -E: HMMER3 E-value Cutoff. Default: 1e-7
+          -D: Domain of Input Proteome. Bacteria or Archaea. Default: Bacteria
+          -M: Directory containing marker files. Default: ./Marker 
 
 
 
