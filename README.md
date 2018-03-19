@@ -13,7 +13,9 @@ Required Software:
 Unlike the original markerScanner, this script does not require BioPerl for sequence output.  There is also no option for DNA input.  You may do this step prior to running the script, using any software of your choice.  This was originally performed using getorf from the EMBOSS suite in the perl script.
 
 Running markerScanner.py
+
      markerScanner.py peptide-sequence-file
+     
 Options:
 
      -E: HMMER3 E-value Cutoff. Default: 1e-7
