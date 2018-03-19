@@ -2,6 +2,7 @@
 ## Python3 Alternative to AMPHORA2 markerScanner.pl
 
 Copyright 2018 by David Burks
+Provided under the GNU General Public License v2
 
 markerScanner.py is meant as a replacement for the markerScanner perl script included with AMPHORA2.
 More information about AMPHORA2 can be found at https://github.com/martinwu/AMPHORA2
