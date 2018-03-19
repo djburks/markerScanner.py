@@ -31,6 +31,6 @@ Options:
 
 All marker files included with in this repo have been redistributed from AMPHORA2, under the GNU General Public License. If you intend to publish any work based on the AMPHORA2 pipeline, plesae use the following citation:
 
-Wu M, Scott AJ. Phylogenomic analysis of bacterial and archaeal sequences with AMPHORA2. Bioinformatics 2012; 28(7):1033-1034.
+     Wu M, Scott AJ. Phylogenomic analysis of bacterial and archaeal sequences with AMPHORA2. Bioinformatics 2012; 28(7):1033-1034.
 
 Any inquiries regarding the AMPHORA2 pipeline, and not directly related to this python script, should be directed to Martin Wu at mw4yv@virigina.edu
