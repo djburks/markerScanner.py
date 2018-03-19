@@ -1,16 +1,16 @@
+#! /usr/bin/env python3
 # Optional replacement for AMPHORA2's MarkerScanner Perl Script
 
 import argparse
 import os
 from sys import exit
 
-marker_directory = 'Marker/'
-
 def parseArguments():
 	parser = argparse.ArgumentParser()
 	parser.add_argument("faa",help="Protein fasta file containing the bacterial proteome.",type=str)
 	parser.add_argument("-E","--evalue",help="Optional e-value paramater for hmmsearch.",type=float,default=1e-7)
 	parser.add_argument("-D","--domain",help="Domain for organism providing the proteome.",type=str,default="Bacteria")
+	parser.add_argument("-M","--directory",help="Directory containing the AMPHORA2 marker files.",type=str,default="Marker/")
 	
 	parser.add_argument("--version",action="version",version='%markerScanner - Version 0.1a')
 	
@@ -77,9 +77,8 @@ def hmmProcess(markerlist,outhmm):
 				
 
 args = parseArguments()
+marker_directory = args.directory
 
-# Download AMPHORA2 Marker Files
-#!!!!WOrk on Directory	
 
 if args.domain.lower() == 'bacteria':
 	hmm = marker_directory + 'Bacteria.markers.hmm'
@@ -89,7 +88,7 @@ else:
 	print('Invalid domain.')
 	exit()
 	
-# HMM Search and Main File
+# HMM Search and Main
 
 os.system("hmmsearch -Z 5000 -E " + str(args.evalue) + " --domE " + str(args.evalue) + " --domtblout py.hmmsearch -o /dev/null " + hmm + " " + args.faa)
 candidates = hmmProcess(markerList(args.domain.lower()),'py.hmmsearch')
